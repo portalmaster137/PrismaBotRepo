@@ -1,5 +1,6 @@
 /node_modules
 /src/*.js
+/utility/*.js
 npm-lock.yaml
 .env
 pnpm-lock.yaml
