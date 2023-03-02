@@ -14,3 +14,4 @@ function CreateDotEnv() {
     });
 }
 
+CreateDotEnv();
