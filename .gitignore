@@ -2,3 +2,4 @@
 /src/*.js
 npm-lock.yaml
 .env
+pnpm-lock.yaml

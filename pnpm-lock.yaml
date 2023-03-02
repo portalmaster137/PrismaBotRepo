@@ -5,16 +5,23 @@ specifiers:
   chalk: ^5.2.0
   dotenv: ^16.0.3
   ora: ^6.1.2
+  prisma: ^4.11.0
 
 dependencies:
   chalk: 5.2.0
   dotenv: 16.0.3
   ora: 6.1.2
+  prisma: 4.11.0
 
 devDependencies:
   '@types/node': 18.14.4
 
 packages:
+
+  /@prisma/engines/4.11.0:
+    resolution: {integrity: sha512-0AEBi2HXGV02cf6ASsBPhfsVIbVSDC9nbQed4iiY5eHttW9ZtMxHThuKZE1pnESbr8HRdgmFSa/Kn4OSNYuibg==}
+    requiresBuild: true
+    dev: false
 
   /@types/node/18.14.4:
     resolution: {integrity: sha512-VhCw7I7qO2X49+jaKcAUwi3rR+hbxT5VcYF493+Z5kMLI0DL568b7JI4IDJaxWFH0D/xwmGJNoXisyX+w7GH/g==}
@@ -128,6 +135,15 @@ packages:
       log-symbols: 5.1.0
       strip-ansi: 7.0.1
       wcwidth: 1.0.1
+    dev: false
+
+  /prisma/4.11.0:
+    resolution: {integrity: sha512-4zZmBXssPUEiX+GeL0MUq/Yyie4ltiKmGu7jCJFnYMamNrrulTBc+D+QwAQSJ01tyzeGHlD13kOnqPwRipnlNw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.11.0
     dev: false
 
   /readable-stream/3.6.1:
