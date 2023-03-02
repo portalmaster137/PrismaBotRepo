@@ -5,6 +5,7 @@ function CreateDotEnv() {
     TOKEN=
     PREFIX=
     VERBOSE=false
+    clientID=
     DATABASE_URL="file:./dev.db"
     `;
 

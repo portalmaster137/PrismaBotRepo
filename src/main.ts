@@ -2,6 +2,8 @@ import { PrismaClient } from "@prisma/client";
 
 import LoggerHandler from "./LoggerHandler.js";
 import ParseEnviroment from "./EnviromentSetup.js";
+import { Client, GatewayIntentBits } from "discord.js";
+import RegisterSlashCommands from "./SlashCommandsRegister.js";
 
 
 const logger = new LoggerHandler(true);
@@ -30,3 +32,7 @@ let args = ParseEnviroment(logger);
 //                       .;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii;
 //                        ;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.
 //                       .;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,
+
+const prisma = new PrismaClient();
+
+const discord = new Client({intents: [GatewayIntentBits.Guilds]});
