@@ -7,11 +7,11 @@ function ParseEnviroment(logger: LoggerHandler) {
     config();
     //check if token is provided
     if (!process.env.TOKEN) {
-        logger.logError(2, "No token provided");
+        logger.log(2, "No token provided");
         process.exit(1);
     }
     if (!process.env.PREFIX) {
-        logger.logError(2, "No prefix provided");
+        logger.log(2, "No prefix provided");
         process.exit(1);
     }
 
@@ -22,7 +22,7 @@ function ParseEnviroment(logger: LoggerHandler) {
         prefix: process.env.PREFIX,
         verbose: VERBOSE
     }
-    logger.logError(0, "Enviroment variables parsed");
+    logger.log(0, "Enviroment variables parsed");
     return result;
 
 }

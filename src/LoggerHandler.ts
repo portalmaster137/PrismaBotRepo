@@ -8,7 +8,7 @@ enum ErrorLevel {
 
 class LoggerHandler {
 
-    public logError(errorLevel: ErrorLevel, message: string) {
+    public log(errorLevel: ErrorLevel, message: string) {
         if (errorLevel === ErrorLevel.Info) {
             console.log(chalk.blue("[*] " +message));
         } else if (errorLevel === ErrorLevel.Warning) {
