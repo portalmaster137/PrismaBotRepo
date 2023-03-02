@@ -1,5 +1,5 @@
-import { config } from "dotenv";
-import chalk from "chalk";
+import { PrismaClient } from "@prisma/client";
+
 import LoggerHandler from "./LoggerHandler.js";
 import ParseEnviroment from "./EnviromentSetup.js";
 
