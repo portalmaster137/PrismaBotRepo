@@ -8,11 +8,9 @@ function ParseEnviroment(logger: LoggerHandler) {
     //check if token is provided
     if (!process.env.TOKEN) {
         logger.log(2, "No token provided");
-        process.exit(1);
     }
     if (!process.env.PREFIX) {
         logger.log(2, "No prefix provided");
-        process.exit(1);
     }
 
     const VERBOSE = process.env.VERBOSE === "true" ? true : false;
