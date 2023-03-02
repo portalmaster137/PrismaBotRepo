@@ -8,7 +8,7 @@
     "start": "node .\\src\\main.js",
     "migrate": "prisma migrate dev --skip-generate",
     "generate": "prisma generate",
-    "prepare": "node .\\utility\\CreateDotEnv.js && npm run migrate && npm run generate"
+    "prepare": "tsc && node .\\utility\\CreateDotEnv.js && npm run migrate && npm run generate"
   },
   "keywords": [],
   "author": "",
