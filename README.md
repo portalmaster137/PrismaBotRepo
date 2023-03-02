@@ -4,4 +4,6 @@ How to run:
 
 2) run npm run make
 
-3) profit bish.
+3) set up all ur shit in the .env file that is created
+
+4) profit.
