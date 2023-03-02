@@ -4,6 +4,6 @@ import LoggerHandler from "./LoggerHandler.js";
 import ParseEnviroment from "./EnviromentSetup.js";
 
 
-const logger = new LoggerHandler();
+const logger = new LoggerHandler(true);
 
 let args = ParseEnviroment(logger);
